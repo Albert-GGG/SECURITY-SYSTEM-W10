@@ -2,7 +2,7 @@
 
 ### Use:
 
-Run "SECAPP.py" to run the main program an open the interfaces.
+Run "SECAPP.py" to run the main program and open the interfaces.
 
 ### Description:
 
