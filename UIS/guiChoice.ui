@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1087</width>
+    <height>854</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::ClickFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="imgCasco">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>230</y>
+      <width>111</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../IMGS/cascodicon.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgLentes">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>420</y>
+      <width>131</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../IMGS/lentesdicon.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgCubre">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>580</y>
+      <width>131</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../IMGS/cubrebocasdicon.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkCasco">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>250</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox::indicator{
+width: 60px;
+height: 60px;
+}
+
+QCheckBox::indicator:checked{
+image: url(&quot;IMGS/2checked.png&quot;);
+}
+
+QCheckBox::indicator:unchecked{
+image: url(&quot;IMGS/2unchecked.png&quot;);
+}</string>
+    </property>
+    <property name="text">
+     <string>Casco</string>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkLentes">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>420</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox::indicator{
+width: 60px;
+height: 60px;
+}
+
+QCheckBox::indicator:checked{
+image: url(&quot;IMGS/2checked.png&quot;);
+}
+
+QCheckBox::indicator:unchecked{
+image: url(&quot;IMGS/2unchecked.png&quot;);
+}</string>
+    </property>
+    <property name="text">
+     <string>Lentes</string>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkCubre">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>590</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>17</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox::indicator{
+width: 60px;
+height: 60px;
+}
+
+QCheckBox::indicator:checked{
+image: url(&quot;IMGS/2checked.png&quot;);
+}
+
+QCheckBox::indicator:unchecked{
+image: url(&quot;IMGS/2unchecked.png&quot;);
+}</string>
+    </property>
+    <property name="text">
+     <string>Cubrebocas</string>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkChaleco">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>256</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox::indicator{
+width: 60px;
+height: 60px;
+}
+
+QCheckBox::indicator:checked{
+image: url(&quot;IMGS/2checked.png&quot;);
+}
+
+QCheckBox::indicator:unchecked{
+image: url(&quot;IMGS/2unchecked.png&quot;);
+}</string>
+    </property>
+    <property name="text">
+     <string>Chaleco</string>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBotas">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>596</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox::indicator{
+width: 60px;
+height: 60px;
+}
+
+QCheckBox::indicator:checked{
+image: url(&quot;IMGS/2checked.png&quot;);
+}
+
+QCheckBox::indicator:unchecked{
+image: url(&quot;IMGS/2unchecked.png&quot;);
+}</string>
+    </property>
+    <property name="text">
+     <string>Botas</string>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkGuantes">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>426</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>18</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCheckBox::indicator{
+width: 60px;
+height: 60px;
+}
+
+QCheckBox::indicator:checked{
+image: url(&quot;IMGS/2checked.png&quot;);
+}
+
+QCheckBox::indicator:unchecked{
+image: url(&quot;IMGS/2unchecked.png&quot;);
+}</string>
+    </property>
+    <property name="text">
+     <string>Guantes</string>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgChaleco">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>230</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../IMGS/chalecodicon.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgGuantes">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>400</y>
+      <width>121</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../IMGS/guantesdicon.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imgBotas">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>560</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../IMGS/botasdicon.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>20</y>
+      <width>721</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 127);
+color: rgb(102, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Equipo a detectar para el acceso controlado</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>110</y>
+      <width>991</width>
+      <height>611</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(85, 170, 0);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="guardarSel">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>750</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Guardar los elementos seleccionados&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 85, 0);</string>
+    </property>
+    <property name="text">
+     <string>  Guardar selección</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normalon>../../../../Pictures/ICONOS/download_arrow_14460.ico</normalon>
+     </iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>220</y>
+      <width>411</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>390</y>
+      <width>411</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>560</y>
+      <width>411</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>220</y>
+      <width>411</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>390</y>
+      <width>411</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>560</y>
+      <width>411</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>140</y>
+      <width>661</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Seleccionar el equipo necesario para el ingreso a la zona de riesgo.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 85, 0);</string>
+    </property>
+    <property name="text">
+     <string>Seleccione el equipo necesario para el ingreso</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>10</y>
+      <width>91</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>IMGS/SecurityCamera.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="toAccess">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>750</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ir a la interfaz de acceso&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 85, 0);</string>
+    </property>
+    <property name="text">
+     <string>   Aceptar</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normalon>IMGS/keyboard-right-arrow-button-1_icon-icons.com_72690.ico</normalon>
+     </iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+   </widget>
+   <zorder>label_5</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>imgCasco</zorder>
+   <zorder>imgLentes</zorder>
+   <zorder>imgCubre</zorder>
+   <zorder>checkCasco</zorder>
+   <zorder>checkLentes</zorder>
+   <zorder>checkCubre</zorder>
+   <zorder>checkChaleco</zorder>
+   <zorder>checkBotas</zorder>
+   <zorder>checkGuantes</zorder>
+   <zorder>imgChaleco</zorder>
+   <zorder>imgGuantes</zorder>
+   <zorder>imgBotas</zorder>
+   <zorder>label_7</zorder>
+   <zorder>guardarSel</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>toAccess</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1087</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuRegistros">
+    <property name="title">
+     <string>Registros</string>
+    </property>
+    <addaction name="actionRegistros"/>
+   </widget>
+   <addaction name="menuRegistros"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionRegistros">
+   <property name="text">
+    <string>Visualizar registros</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

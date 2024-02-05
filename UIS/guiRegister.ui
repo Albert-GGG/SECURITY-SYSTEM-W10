@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>802</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableRegistros">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>190</y>
+      <width>731</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 85, 0);</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>137</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>N°</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Fecha</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Configuración</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Total con EPP</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Total sin EPP</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>20</y>
+      <width>351</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 127);</string>
+    </property>
+    <property name="text">
+     <string>Registros de accesos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="regresar">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>120</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 127);</string>
+    </property>
+    <property name="text">
+     <string>Regresar</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normalon>IMGS/flechaIzquierda.png</normalon>
+     </iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboFechas">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>120</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Filtrar por fecha&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="modelColumn">
+     <number>0</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>  Todas las fechas</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>IMGS/calendar.png</normaloff>IMGS/calendar.png</iconset>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboConf">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>120</y>
+      <width>301</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Filtrar por configuración&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <item>
+     <property name="text">
+      <string> Todas las configuraciones</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>IMGS/2checked.png</normaloff>IMGS/2checked.png</iconset>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>10</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>IMGS/agenda.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>802</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
