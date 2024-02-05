@@ -7,7 +7,7 @@ Run "SECAPP.py" to run the main program and open the interfaces.
 ### Description:
 
 Workplace security system that utilizes computer vision and artificial intelligence for the detection of personal protective equipment (PPE) in construction sites, databases for registering accesses to the workplace, and IoT to activate an entrance mechanism.
-*This version of the program runs only on windows 10 computers, for the Raspberry-pi 4 version go to: <raspberry>*
+*This version of the program runs only on windows 10 computers, for the Raspberry-pi 4 version go to: <https://github.com/Albert-GGG/SECURITY-SYSTEM-PI4.git>*
 
 ### Complete system visualization
 
