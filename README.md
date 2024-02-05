@@ -11,7 +11,7 @@ Workplace security system that utilizes computer vision and artificial intellige
 
 ### Complete system visualization
 
-![System](/assets/IMGS/signals.png)
+![System](/ASSETS/IMGS/signals.png)
 
 #### Files:
 
@@ -67,15 +67,15 @@ There are three user interfaces that make the entire program function and be man
 
 - UI for the selection of the personal protective equipment: This interface is shown when the program is run and it allows the operator or area supervisor to select and set the equipment that is necessary to access the site according to the safety measures to abide by. The UI was designed to be simple and easy to use, but also to provide flexibility of use cases for the user (Up to 63 possible combinations).
 
-![GUI of PPE selection](/assets/IMGS/GUI-selection.png)
+![GUI of PPE selection](/ASSETS/IMGS/GUI-selection.png)
 
 - UI of the detections in real time: This UI has the purposes of:
 
   - Showing the PPE necessary to access the site according to what was specified by the supervisor (A silouette of a person wearing the equipment).
   - Showing the live video of detections of the PPE. When an element of the PPE is detected as being worn, a bounding box is drawn over that element with its name.
 
-![GUI of live detections](/assets/IMGS/GUI-livevideo.png)
+![GUI of live detections](/ASSETS/IMGS/GUI-livevideo.png)
 
 - UI of the access registers: This UI consists of a table that shows all the registers of accesses to the site by day and configuration of EPP. The user can visualize the stored data by using the combo boxes that sort the data by date or EPP configuration.
 
-![GUI of access registers](/assets/IMGS/GUI-db.png)
+![GUI of access registers](/ASSETS/IMGS/GUI-db.png)
